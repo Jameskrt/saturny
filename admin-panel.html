@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Admin Panel | Saturny Pizza </title>
+        <link rel="shortcut icon" href="images/logo.png" type="logo">
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="dashboard.js" async></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Saturny Pizza - Admin Panel</h1>
+            <img src="images/logo.png" alt="Saturny Pizza logo">
+            <div class="logout">
+                <div class="usericon">
+                    <a href="acc-login.php">
+                        <i class="fa-regular fa-user"></i>
+                        <aa>Admin, Logout? </aa>
+                    </a>
+                </div>
+            </div>
+            <div class="announcement-container">
+                <div class="announcement">
+                    <p>Special Offer! Get 20% off on all pizzas today.</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <h2>Welcome to the Admin Panel</h2>
+            <nav>
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="toggleSection('dashboard')">Dashboard</a></li>
+                    <li><a href="javascript:void(0);" onclick="toggleSection('orders')">Orders</a></li>
+                    <li><a href="javascript:void(0);" onclick="toggleSection('products')">Products</a></li>
+                    <li><a href="javascript:void(0);" onclick="toggleSection('customers')">Customers</a></li>
+                </ul>
+            </nav>
+            <div id="dashboard" class="dashboard-content">
+                <!-- Content for the Dashboard section -->
+                <div class="dashboard-content">
+                    <h3>Recent Sales</h3>
+                    <ul>
+                        <li>Product 1 - ₱250.00</li>
+                        <li>Product 2 - ₱180.00</li>
+                        <li>Product 3 - ₱320.00</li>
+                    </ul>
+                </div>
+                <div class="dashboard-content">
+                    <h3>Top Products</h3>
+                    <ol>
+                        <li>Product A</li>
+                        <li>Product B</li>
+                        <li>Product C</li>
+                    </ol>
+                </div>
+                <!-- Add more content as needed -->
+            </div>
+            <div id="orders">
+                <ul>
+                    <li>Product 1 - ₱250.00</li>
+                    <li>Product 2 - ₱180.00</li>
+                    <li>Product 3 - ₱320.00</li>
+                </ul>
+            </div>
+            <div id="products">
+                <!-- Content for the Products section -->
+            </div>
+            <div id="customers">
+                <!-- Content for the Customers section -->
+            </div>
+        </main>        
+
+        <footer>
+            <span>&copy; 2023 - Saturny Pizza. - All rights reserved.</span><br><br>
+            <a href="https://web.facebook.com/Jameskrrrrt/" target="_blank"><i class='bx bxl-facebook-square bx-tada'
+                    alt="Facebook logo"></a></i>
+            <a href="https://twitter.com/Jameskrrt" target="_blank"><i class='bx bxl-twitter bx-tada'
+                    alt="Twitter logo"></a></i>
+            <a href="https://instagram.com/jameskrrt?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                    class='bx bxl-instagram-alt bx-tada' alt="Instagram logo"></a></i>
+        </footer>
+        <script src="dashboard.js"></script>
+    </body>
+</html>
